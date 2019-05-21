@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-namespace PPE4GSB.Pages
+namespace PPE4GSB
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PageAccueil : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public PageAccueil()
+        public MainPage()
         {
             InitializeComponent();
         }

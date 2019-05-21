@@ -19,7 +19,7 @@ namespace PPE4GSB.Pages
 
         private async void btnAccueil_Clicked(object sender, EventArgs e)
         {
-            Pages.PageAccueil page = new Pages.PageAccueil();
+            MainPage page = new MainPage();
             await Navigation.PushModalAsync(page);
         }
     }
