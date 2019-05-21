@@ -30,6 +30,12 @@ namespace PPE4GSB.Pages
 			MyListView.ItemsSource = Items;
         }
 
+        private async void btnAccueil_Clicked(object sender, EventArgs e)
+        {
+            Pages.PageAccueil page = new Pages.PageAccueil();
+            await Navigation.PushModalAsync(page);
+        }
+
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)

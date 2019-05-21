@@ -16,5 +16,11 @@ namespace PPE4GSB.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void btnAccueil_Clicked(object sender, EventArgs e)
+        {
+            Pages.PageAccueil page = new Pages.PageAccueil();
+            await Navigation.PushModalAsync(page);
+        }
+    }
 }

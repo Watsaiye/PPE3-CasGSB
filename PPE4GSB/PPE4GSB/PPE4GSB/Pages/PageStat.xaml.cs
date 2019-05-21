@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace PPE4GSB.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PageMedicament : ContentPage
+    public partial class PageStat : ContentPage
     {
         public ObservableCollection<string> Items { get; set; }
 
-        public PageMedicament()
+        public PageStat()
         {
             InitializeComponent();
 
@@ -46,5 +46,6 @@ namespace PPE4GSB.Pages
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
         }
+        
     }
 }
