@@ -11,8 +11,12 @@
                         <ViewCell>
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal">
-                                    <Label WidthRequest="100" Text="{Binding Code_Type}"></Label>
-                                    <Label WidthRequest="200" Text="{Binding Libelle_Type}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding DepotLocal}"></Label>
+                                    <Label WidthRequest="100" Text="{Binding NomCommercial}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding ContreIndic}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding Composition}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding Effets}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding PrixEchantillon}"></Label>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>
