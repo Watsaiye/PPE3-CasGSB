@@ -1,33 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PPE4GSB.Pages.PageMedicament">
-  <ListView x:Name="MyListView"
-            ItemsSource="{Binding Items}"
-            ItemTapped="Handle_ItemTapped"
-            CachingStrategy="RecycleElement">
-            
-    <!--Built in Cells-->
-    <ListView.ItemTemplate>
-        <DataTemplate>
-            <TextCell Text="{Binding .}" />
-        </DataTemplate>
-    </ListView.ItemTemplate>
-    
-    <!--Custom View Cells-->
-    <!--
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          <StackLayout>
-            <Label Text="{Binding Text}" 
-                   Style="{DynamicResource ListItemTextStyle}" />
-            <Label Text="{Binding Detail}" 
-                   Style="{DynamicResource ListItemDetailTextStyle}"/>
-          </StackLayout>
-        </ViewCell>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-    -->
-  </ListView>
+             x:Class="PPE4GSB.Pages.PageListIndividu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Liste des Médicaments"></Label>
+            <ListView x:Name="lvMedicaments" ItemSelected="LvMedicaments_Selected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label WidthRequest="200" Text="{Binding DepotLocal}"></Label>
+                                    <Label WidthRequest="100" Text="{Binding NomCommercial}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding ContreIndic}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding Composition}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding Effets}"></Label>
+                                    <Label WidthRequest="200" Text="{Binding PrixEchantillon}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
+

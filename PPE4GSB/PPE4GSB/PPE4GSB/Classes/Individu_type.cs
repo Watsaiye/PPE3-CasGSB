@@ -6,7 +6,7 @@ namespace PPE4GSB
 {
     public class Individu_type
     {
-        public int code_type { get; set; }
-        public string libelle { get; set; }
+        public int Code_Type { get; set; }
+        public string Libelle_Type { get; set; }
     }
 }

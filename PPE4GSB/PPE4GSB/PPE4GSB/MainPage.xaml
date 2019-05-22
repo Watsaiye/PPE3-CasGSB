@@ -8,7 +8,15 @@
         <!-- Place new controls here -->
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="Start" />
+
+        <Button Text="Liste des Médicaments" x:Name="btnListeMedicament" Clicked="btnListeMedicament_Clicked"></Button>
+
+        <Button Text="Liste des types d'individus" x:Name="btnListeIndividu" Clicked="btnListeIndividu_Clicked"></Button>
+
+        <Button Text="Statistiques diverses" x:Name="btnStat" Clicked="btnStat_Clicked"></Button>
+        
+        <Button Text="Faire une prescription" x:Name="btnPrescription" Clicked="btnPrescription_Clicked"></Button>
     </StackLayout>
 
 </ContentPage>
