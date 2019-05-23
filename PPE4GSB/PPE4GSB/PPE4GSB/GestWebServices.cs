@@ -33,9 +33,11 @@ namespace PPE4GSB
             return lesIndividus;
         }
 
-        public async void InsertMedicament(string med_depotlegal, string med_nomCommercial, string fam_code, string med_contrIndic, string med_composition, string med_effets, double med_prixechantillon)
+        public async void InsertMedicamentAsync(string med_depotlegal, string med_nomCommercial, string fam_code, string med_contrIndic, string med_composition, string med_effets, double med_prixechantillon)
         {
             response = await ws.GetStringAsync("http://paris2.ingeteis.fr/SLAM_2019/SEIGLER_Alan/Situation_2_Cas_GSB/InsererMedoc.php?depot=" + med_depotlegal + "&nomcom=" + med_nomCommercial + "&codefam=" + fam_code + "&compo=" + med_composition + "&effets=" + med_effets + "&contrindic=" + med_contrIndic + "&prix=" + med_prixechantillon);
         }
+
+
     }
 }

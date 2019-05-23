@@ -13,7 +13,7 @@ namespace PPE4GSB.Pages
     public partial class PageListIndividu : ContentPage
     {
         public ObservableCollection<string> Items { get; set; }
-
+        
         public PageListIndividu()
         {
             InitializeComponent();
@@ -26,8 +26,8 @@ namespace PPE4GSB.Pages
                 "Item 4",
                 "Item 5"
             };
-			
-			MyListView.ItemsSource = Items;
+
+            lvIndividus.ItemsSource = Items;
         }
 
         private async void btnAccueil_Clicked(object sender, EventArgs e)
