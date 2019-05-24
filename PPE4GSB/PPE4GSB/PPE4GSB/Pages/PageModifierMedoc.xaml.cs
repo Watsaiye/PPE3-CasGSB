@@ -22,12 +22,12 @@ namespace PPE4GSB.Pages
         public void AfficherInfoMedoc(Medicaments unMedicament)
         {
             txtDepotLegal.Text = unMedicament.Med_depotlegal;
-            txtNomCommercial.Text = unMedicament.Med_nomCommercial.ToString();
-            txtComposition.Text = unMedicament.Med_composition.ToString();
-            txtEffets.Text = unMedicament.Med_effets.ToString();
-            txtContreIndic.Text = unMedicament.Med_contrIndic.ToString();
-            txtPrix.Text = unMedicament.Med_prixechantillon;
-            txtCodeFamille.Text = unMedicament.Fam_code;
+            txtNomCommercial.Text = unMedicament.Med_nomCommercial;
+            txtComposition.Text = unMedicament.Med_composition;
+            txtEffets.Text = unMedicament.Med_effets;
+            txtContreIndic.Text = unMedicament.Med_contrIndic;
+            txtPrix.Text = unMedicament.Med_prixechantillon.ToString();
+            txtCodeFamille.Text = unMedicament.Fam_code.ToString();
         }
 
         public void btnModifMedoc_Clicked(object sender, EventArgs e)
@@ -37,11 +37,11 @@ namespace PPE4GSB.Pages
             string Med_composition = txtComposition.Text;
             string Med_effets = txtEffets.Text;
             string Med_contrIndic = txtContreIndic.Text;
-            string Med_prixechnatillon = txtPrix.Text;
+            double Med_prixechnatillon = txtPrix.Text;
             string Fam_code = txtCodeFamille.Text;
 
 
-            App.GestWeb.UpdateMedicamentAsync(Med_depotlegal, Med_nomCommercial, Med_composition, Med_effets, Med_contrIndic, Med_prixechnatillon, Fam_code);
+            App.GestWeb.UpdateMedicamentAsync(Med_depotlegal, Med_nomCommercial, Fam_code, Med_composition, Med_effets, Med_contrIndic, Med_prixechantillon);
 
             DisplayAlert("Modification du médicament effectué", "Modification réalisée", "c'est fait");
 

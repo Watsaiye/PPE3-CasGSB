@@ -26,7 +26,7 @@ namespace PPE4GSB.Pages
             lvMedicaments.ItemsSource = await App.GestWeb.GetMedicamentsAsync();
         }
 
-        private async void LvMedicaments_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void LvMedicaments_Selected(object sender, SelectedItemChangedEventArgs e)
         {
             if (lvMedicaments.SelectedItem != null)
             {
@@ -36,10 +36,9 @@ namespace PPE4GSB.Pages
             }
         }
 
-
-        private async void BtnAjouterComposant_Clicked(object sender, EventArgs e)
+        private async void BtnAjouterMedicament_Clicked(object sender, EventArgs e)
         {
-            Pages.PageAjouterComposant page = new Pages.PageAjouterComposant((lvComposants.ItemsSource as List<Composant>).Count);
+            Pages.PageAjouterMedicament page = new Pages.PageAjouterMedicament((lvMedicaments.ItemsSource as List<Medicaments>).Count);
             await Navigation.PushModalAsync(page);
         }
 
