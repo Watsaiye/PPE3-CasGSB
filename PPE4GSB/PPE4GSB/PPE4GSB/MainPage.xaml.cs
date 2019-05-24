@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PPE4GSB.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,9 +10,11 @@ namespace PPE4GSB
 {
     public partial class MainPage : ContentPage
     {
+
         public MainPage()
         {
             InitializeComponent();
+
         }
 
         //liste de bouton permettant de bouger d'une page à une autre
