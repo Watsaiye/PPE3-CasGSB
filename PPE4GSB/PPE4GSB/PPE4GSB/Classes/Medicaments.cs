@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PPE4GSB
+namespace PPE4GSB.Classes
 {
     public class Medicaments
     {
