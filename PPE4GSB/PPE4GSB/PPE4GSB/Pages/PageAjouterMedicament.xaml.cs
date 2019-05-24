@@ -26,7 +26,7 @@ namespace PPE4GSB.Pages
             }
             else
             {
-                App.GestWeb.InsertMedicamentAsync(txtDepotLegal.Text, txtNomCommercial.Text);
+                App.GestWeb.InsertMedicamentAsync(txtDepotLegal.Text, txtNomCommercial.Text, txtComposition.Text, txtEffets.Text, txtContreIndic.Text, txtPrix.Text, txtCodeFamille.Text);
                 DisplayAlert("L'insertion s'est bien passé", "Le composant à été ajouté", "Ok");
             }
         }
