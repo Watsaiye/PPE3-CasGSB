@@ -27,7 +27,7 @@ namespace PPE4GSB.Pages
                 "Item 5"
             };
 			
-			MyListView.ItemsSource = Items;
+			lvMedicaments   .ItemsSource = Items;
         }
 
         private async void btnAccueil_Clicked(object sender, EventArgs e)
