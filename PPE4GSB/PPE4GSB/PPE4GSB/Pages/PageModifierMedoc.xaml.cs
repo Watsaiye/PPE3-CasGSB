@@ -37,7 +37,7 @@ namespace PPE4GSB.Pages
             string Med_composition = txtComposition.Text;
             string Med_effets = txtEffets.Text;
             string Med_contrIndic = txtContreIndic.Text;
-            double Med_prixechnatillon = txtPrix.Text;
+            double Med_prixechantillon = txtPrix.Text;
             string Fam_code = txtCodeFamille.Text;
 
 
