@@ -40,7 +40,7 @@ namespace PPE4GSB.Pages
         {
             Pages.PageAjouterMedicament page = new Pages.PageAjouterMedicament(lvMedicaments.ItemsSource as List<Medicaments>);
             await Navigation.PushModalAsync(page);
-        }
+        }   
 
         private async void btnAccueil_Clicked(object sender, EventArgs e)
         {

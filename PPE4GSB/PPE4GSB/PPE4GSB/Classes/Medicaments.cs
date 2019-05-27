@@ -12,6 +12,6 @@ namespace PPE4GSB.Classes
         public string Med_contrIndic { get; set; }
         public string Med_composition { get; set; }
         public string Med_effets { get; set; }
-        public double Med_prixechantillon { get; set; }
+        public string Med_prixechantillon { get; set; }
     }
 }
