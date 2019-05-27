@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PPE4GSB.Pages.PageModifierIndividu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Le code du type d'individu"></Label>
+            <Entry x:Name="txtCode_Type" IsEnabled="False"></Entry>
+
+            <Label Text="Le nom du type d'individu"></Label>
+            <Entry x:Name="txtLibelle_Type"></Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
