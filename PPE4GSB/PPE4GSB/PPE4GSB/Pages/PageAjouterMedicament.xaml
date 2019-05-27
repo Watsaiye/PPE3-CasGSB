@@ -4,28 +4,29 @@
              x:Class="PPE4GSB.Pages.PageAjouterMedicament">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Le dépot légal du médicament"></Label>
-            <Entry x:Name="txtDepotLegal" IsEnabled="False"></Entry>
+          <Label Text="Le dépot légal du médicament"></Label>
+          <Entry x:Name="txtDepotLegal" IsEnabled="False"></Entry>
 
-            <Label Text="Nom commercial du medicament"></Label>
-            <Entry x:Name="txtNomCommercial"></Entry>
+          <Label Text="Nom commercial du medicament"></Label>
+          <Entry x:Name="txtNomCommercial"></Entry>
 
-            <Label Text="Composition du médicament"></Label>
-            <Entry x:Name="txtComposition"></Entry>
+          <Label Text="Composition du médicament"></Label>
+          <Entry x:Name="txtComposition"></Entry>
 
-            <Label Text="Les effets du médicament"></Label>
-            <Entry x:Name="txtEffets"></Entry>
+          <Label Text="Les effets du médicament"></Label>
+          <Entry x:Name="txtEffets"></Entry>
 
-            <Label Text="Les contre-indications du médicament"></Label>
-            <Entry x:Name="txtContreIndic"></Entry>
+          <Label Text="Les contre-indications du médicament"></Label>
+          <Entry x:Name="txtContreIndic"></Entry>
 
-            <Label Text="Le prix de l'échantillon du médicament"></Label>
-            <Entry x:Name="txtPrix"></Entry>
+          <Label Text="Le prix de l'échantillon du médicament"></Label>
+          <Entry x:Name="txtPrix"></Entry>
 
-            <Label Text="Le code de la famille du médicament"></Label>
-            <Entry x:Name="txtCodeFamille"></Entry>
+          <Label Text="Le code de la famille du médicament"></Label>
+          <Entry x:Name="txtCodeFamille"></Entry>
 
-            <Button Text="Modifier le médicament" x:Name="btnAjouterMedoc" Clicked="btnAjouterMedoc_Clicked"></Button>
+          <Button Text="Ajouter un médicament" x:Name="BtnAjouterMedoc" Clicked="BtnAjouterMedoc_Clicked"></Button>
+          <Button Text="Retour accueil" x:Name="BtnAccueil" Clicked="BtnAccueil_Clicked" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

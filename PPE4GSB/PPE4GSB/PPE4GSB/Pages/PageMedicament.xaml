@@ -23,6 +23,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+          <Button Text="Retour accueil" x:Name="BtnAccueil" Clicked="BtnAccueil_Clicked" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

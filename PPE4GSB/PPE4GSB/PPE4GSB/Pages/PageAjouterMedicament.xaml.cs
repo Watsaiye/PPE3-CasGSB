@@ -18,7 +18,7 @@ namespace PPE4GSB.Pages
 			InitializeComponent ();
 		}
 
-        private void BtnAjouterMedicament_Clicked(object sender, EventArgs e)
+        private void BtnAjouterMedoc_Clicked(object sender, EventArgs e)
         {
             if (txtDepotLegal.Text == null || txtNomCommercial.Text == null || txtComposition.Text == null || txtEffets.Text == null || txtContreIndic.Text == null || txtPrix.Text == null || txtCodeFamille.Text == null)
             {
@@ -29,6 +29,12 @@ namespace PPE4GSB.Pages
                 App.GestWeb.InsertMedicamentAsync(txtDepotLegal.Text, txtNomCommercial.Text, txtComposition.Text, txtEffets.Text, txtContreIndic.Text, txtPrix.Text, txtCodeFamille.Text);
                 DisplayAlert("L'insertion s'est bien passé", "Le composant à été ajouté", "Ok");
             }
+        }
+
+        private async void BtnAccueil_Clicked(object sender, EventArgs e)
+        {
+            MainPage page = new MainPage();
+            await Navigation.PushModalAsync(page);
         }
     }
 }

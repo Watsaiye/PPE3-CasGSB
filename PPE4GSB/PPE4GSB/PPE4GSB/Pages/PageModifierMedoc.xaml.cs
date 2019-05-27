@@ -46,5 +46,11 @@ namespace PPE4GSB.Pages
             DisplayAlert("Modification du médicament effectué", "Modification réalisée", "c'est fait");
 
         }
+
+        private async void BtnAccueil_Clicked(object sender, EventArgs e)
+        {
+            MainPage page = new MainPage();
+            await Navigation.PushModalAsync(page);
+        }
     }
 }

@@ -5,20 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
           <Label Text="Liste des Individus"></Label>
-          <ListView x:Name="lvIndividus" ItemSelected="LvIndividu_Selected">
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ViewCell>
-                  <ViewCell.View>
-                    <StackLayout Orientation="Horizontal">
-                      <Label WidthRequest="100" Text="{Binding Code_Type}"></Label>
-                      <Label WidthRequest="200" Text="{Binding Libelle_Type}"></Label>
-                    </StackLayout>
-                  </ViewCell.View>
-                </ViewCell>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>
+          <Button Text="Retour accueil" x:Name="BtnAccueil" Clicked="BtnAccueil_Clicked" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
