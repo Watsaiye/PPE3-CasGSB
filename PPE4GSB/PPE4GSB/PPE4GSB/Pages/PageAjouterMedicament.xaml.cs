@@ -1,4 +1,4 @@
-﻿using PPE4GSB.Classes
+﻿using PPE4GSB.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace PPE4GSB.Pages
 			InitializeComponent ();
 		}
 
-        private void BtnAjouterLeComposant_Clicked(object sender, EventArgs e)
+        private void BtnAjouterMedicament_Clicked(object sender, EventArgs e)
         {
             if (txtDepotLegal.Text == null || txtNomCommercial.Text == null || txtComposition.Text == null || txtEffets.Text == null || txtContreIndic.Text == null || txtPrix.Text == null || txtCodeFamille.Text == null)
             {
