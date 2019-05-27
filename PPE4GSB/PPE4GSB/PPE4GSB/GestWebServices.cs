@@ -39,7 +39,7 @@ namespace PPE4GSB
             response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/InsererMedoc.php?depot=" + med_depotlegal + "&nomcom=" + med_nomCommercial + "&codefam=" + fam_code + "&compo=" + med_composition + "&effets=" + med_effets + "&contrindic=" + med_contrIndic + "&prix=" + med_prixechantillon);
         }
 
-        public async void InsertIndividuTypeAsync(int Code_Type, string Libelle_Type)
+        public async void InsertIndividuTypeAsync(string Code_Type, string Libelle_Type)
         {
             response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/InsererIndividu.php?code=" + Code_Type + "&libelle=" + Libelle_Type);
         }
@@ -49,7 +49,7 @@ namespace PPE4GSB
             response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/UpdateMedoc.php?depot=" + depot + "&nom=" + nomcom + "&code=" + famcode + "&compo=" + compo + "&effets=" + effets + "&contreindic=" + contreindic + "&prix=" + prix);
         }
 
-        public async void UpdateIndividuAsync(int Code_Type, string Libelle_Type)
+        public async void UpdateIndividuAsync(string Code_Type, string Libelle_Type)
         {
             response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/UpdateIndividu.php?code=" + Code_Type + "&libelle=" + Libelle_Type);
         }

@@ -25,7 +25,7 @@
             <Label Text="Le code de la famille du médicament"></Label>
             <Entry x:Name="txtCodeFamille"></Entry>
             
-            <Button Text="Modifier le médicament" x:Name="btnModifierMedoc" Clicked="btnModifMedoc_Clicked"></Button>
+            <Button Text="Modifier le médicament" x:Name="BtnModifierMedoc" Clicked="BtnModifMedoc_Clicked"></Button>
             <Button Text="Retour accueil" x:Name="BtnAccueil" Clicked="BtnAccueil_Clicked" ></Button>
         </StackLayout>
     </ContentPage.Content>

@@ -30,7 +30,7 @@ namespace PPE4GSB.Pages
             txtCodeFamille.Text = unMedicament.CodeFam.ToString();
         }
 
-        public void btnModifMedoc_Clicked(object sender, EventArgs e)
+        public void BtnModifMedoc_Clicked(object sender, EventArgs e)
         {
             string Depot = txtDepotLegal.Text;
             string NomCom = txtNomCommercial.Text;

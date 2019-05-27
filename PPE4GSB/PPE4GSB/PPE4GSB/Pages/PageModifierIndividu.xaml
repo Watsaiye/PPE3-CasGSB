@@ -9,6 +9,8 @@
 
             <Label Text="Le nom du type d'individu"></Label>
             <Entry x:Name="txtLibelle_Type"></Entry>
+
+            <Button x:Name="BtnModifierIndividu" Clicked="BtnModifierIndividu_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
