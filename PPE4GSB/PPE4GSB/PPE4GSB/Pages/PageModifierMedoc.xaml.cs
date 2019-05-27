@@ -26,7 +26,7 @@ namespace PPE4GSB.Pages
             txtComposition.Text = unMedicament.Med_composition;
             txtEffets.Text = unMedicament.Med_effets;
             txtContreIndic.Text = unMedicament.Med_contrIndic;
-            txtPrix.Text = unMedicament.Med_prixechantillon.ToString();
+            txtPrix.Text = unMedicament.Med_prixechantillon;
             txtCodeFamille.Text = unMedicament.Fam_code.ToString();
         }
 
