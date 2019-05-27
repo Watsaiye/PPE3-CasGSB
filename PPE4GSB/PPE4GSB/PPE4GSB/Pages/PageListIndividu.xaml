@@ -19,6 +19,7 @@
               </DataTemplate>
             </ListView.ItemTemplate>
           </ListView>
+          <Button Text="Ajouter un nouveau type d'individu"  x:Name="BtnPageAjouterIndividu" Clicked="BtnPageAjouterIndividu_Clicked"></Button>
           <Button Text="Retour accueil" x:Name="BtnAccueil" Clicked="BtnAccueil_Clicked" ></Button>
         </StackLayout>
     </ContentPage.Content>

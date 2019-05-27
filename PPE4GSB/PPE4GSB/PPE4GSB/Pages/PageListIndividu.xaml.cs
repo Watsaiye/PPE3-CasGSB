@@ -36,10 +36,18 @@ namespace PPE4GSB.Pages
             }
         }
 
+        private async void BtnPageAjouterIndividu_Clicked(object sender, EventArgs e)
+        {
+            Pages.PageAjouterIndividu page = new Pages.PageAjouterIndividu();
+            await Navigation.PushModalAsync(page);
+        }
+
         private async void BtnAccueil_Clicked(object sender, EventArgs e)
         {
             MainPage page = new MainPage();
             await Navigation.PushModalAsync(page);
         }
+
+
     }
 }

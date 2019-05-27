@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PPE4GSB.Pages.PageAjouterIndividu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Le code du type d'individu"></Label>
+            <Entry x:Name="txtCodeType" IsEnabled="False"></Entry>
+
+            <Label Text="Le nom du type d'individu"></Label>
+            <Entry x:Name="txtLibelletype"></Entry>
+
+            <Button Text="Ajouter un nouveau type d'individu" x:Name="BtnAjouterIndividu" Clicked="BtnAjouterIndividu_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
