@@ -6,12 +6,12 @@ namespace PPE4GSB.Classes
 {
     public class Medicaments
     {
-        public string Med_depotlegal { get; set; }
-        public string Med_nomCommercial { get; set; }
-        public string Fam_code { get; set; }
-        public string Med_contrIndic { get; set; }
-        public string Med_composition { get; set; }
-        public string Med_effets { get; set; }
-        public string Med_prixechantillon { get; set; }
+        public string Depot { get; set; }
+        public string NomCom { get; set; }
+        public string CodeFam { get; set; }
+        public string ContreIndic { get; set; }
+        public string Compo { get; set; }
+        public string Effets { get; set; }
+        public double Prix { get; set; }
     }
 }
