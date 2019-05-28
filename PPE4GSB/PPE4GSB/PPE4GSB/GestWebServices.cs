@@ -22,14 +22,14 @@ namespace PPE4GSB
         // Méthodes appelant les API PHP
         public async Task<List<Medicaments>> GetMedicamentsAsync()
         {
-            response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/GetLesMedocs.php");
+            response = await ws.GetStringAsync("http://arthur.sio19ingetis.lan/ppe4/GetLesMedocs.php");
             List<Medicaments> lesMedicaments = JsonConvert.DeserializeObject<List<Medicaments>>(response);
             return lesMedicaments;
         }
 
         public async Task<List<Individu_type>> GetIndividu_TypesAsync()
         {
-            response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/GetLesIndividus.php");
+            response = await ws.GetStringAsync("http://arthur.sio19ingetis.lan/ppe4/GetLesIndividus.php");
             List<Individu_type> lesIndividus = JsonConvert.DeserializeObject<List<Individu_type>>(response);
             return lesIndividus;
         }
@@ -41,17 +41,17 @@ namespace PPE4GSB
 
         public async void InsertIndividuTypeAsync(string Code_Type, string Libelle_Type)
         {
-            response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/InsererIndividu.php?code=" + Code_Type + "&libelle=" + Libelle_Type);
+            response = await ws.GetStringAsync("http://arthur.sio19ingetis.lan/ppe4/InsererIndividu.php?code=" + Code_Type + "&libelle=" + Libelle_Type);
         }
 
         public async void UpdateMedicamentAsync(string depot, string nomcom, string famcode, string contreindic, string compo, string effets, string prix)
         {
-            response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/UpdateMedoc.php?depot=" + depot + "&nom=" + nomcom + "&code=" + famcode + "&compo=" + compo + "&effets=" + effets + "&contreindic=" + contreindic + "&prix=" + prix);
+            response = await ws.GetStringAsync("http://arthur.sio19ingetis.lan/ppe4/UpdateMedoc.php?depot=" + depot + "&nom=" + nomcom + "&code=" + famcode + "&compo=" + compo + "&effets=" + effets + "&contreindic=" + contreindic + "&prix=" + prix);
         }
 
         public async void UpdateIndividuAsync(string Code_Type, string Libelle_Type)
         {
-            response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/UpdateIndividu.php?code=" + Code_Type + "&libelle=" + Libelle_Type);
+            response = await ws.GetStringAsync("http://arthur.sio19ingetis.lan/ppe4/UpdateIndividu.php?code=" + Code_Type + "&libelle=" + Libelle_Type);
         }
     }
 }
