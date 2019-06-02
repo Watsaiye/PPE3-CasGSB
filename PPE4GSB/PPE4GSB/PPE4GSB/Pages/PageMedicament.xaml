@@ -13,10 +13,7 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Label WidthRequest="200" Text="{Binding Depot}"></Label>
                                     <Label WidthRequest="100" Text="{Binding NomCom}"></Label>
-                                    <Label WidthRequest="200" Text="{Binding CodeFam}"></Label>
-                                    <Label WidthRequest="200" Text="{Binding ContreIndic}"></Label>
                                     <Label WidthRequest="200" Text="{Binding Effets}"></Label>
-                                    <Label WidthRequest="200" Text="{Binding Compo}"></Label>
                                     <Label WidthRequest="200" Text="{Binding Prix}"></Label>
                                 </StackLayout>
                             </ViewCell.View>

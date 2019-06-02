@@ -53,5 +53,10 @@ namespace PPE4GSB
         {
             response = await ws.GetStringAsync("http://arthur.sio19ingetis.lan/ppe4/UpdateIndividu.php?code=" + Code_Type + "&libelle=" + Libelle_Type);
         }
+
+        public async void InsertPrecriptionAsync(string med_depotlegal,)
+        {
+            response = await ws.GetStringAsync("http://alan.sio19ingetis.lan/ppe4/InsererMedoc.php?depot=" + med_depotlegal + "&nomcom=");
+        }
     }
 }
